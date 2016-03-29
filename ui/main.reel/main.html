@@ -13,6 +13,19 @@
                 "element": {"#": "main"}
             }
         },
+        "checkbox1": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox1"},
+                "active": true,
+                "checked": true,
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "value": "1"
+            }
+        },
         "flow": {
             "prototype": "montage/ui/flow.reel",
             "properties": {
@@ -71,6 +84,20 @@
                 ]
             }
         },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "max": 100,
+                "min": 0,
+                "value": 50
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -88,7 +115,9 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <p data-montage-id="text">
             <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
-                <div></div>
+                <div data-montage-id="checkbox1">
+                    <div data-montage-id="slider"></div>
+                </div>
             </div>
         </p>
     </div>
